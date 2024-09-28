@@ -4,14 +4,14 @@
   "description": "ecomerce using MERN",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon backend/server.js",
+    "start": "npx nodemon backend/server.js",
     "dev": "set NODE_ENV=development&&nodemon backend/server.js ",
     "prod": "set NODE_ENV=production&&nodemon backend/server.js ",
     "seeder": "node utils/seeder.js"
   },
   "author": "ABILASH",
   "license": "ISC",
-  "dependencies": {
+  "dependencies": { 
     "bcrypt": "^5.1.1",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
