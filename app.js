@@ -4,11 +4,14 @@ const errorMiddleware = require('./middlewares/error');
 const cookieParser = require('cookie-parser')
 const path = require('path')
 const dotenv = require('dotenv');
+const cors = require('cors');
 dotenv.config({path:path.join(__dirname,"config/config.env")});
 
 const bcrypt = require('bcryptjs');
 app.use(express.json());
 app.use(cookieParser());
+app.use(cors());
+
 app.use('/uploads', express.static(path.join(__dirname,'uploads') ) )
 
 const products = require('./routes/product')
