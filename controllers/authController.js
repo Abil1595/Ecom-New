@@ -4,15 +4,16 @@ const sendEmail = require('../utils/email');
 const ErrorHandler = require('../utils/errorHandler');
 const sendToken = require('../utils/jwt');
 const crypto = require('crypto')
-
+ 
 //Register User - /api/v1/register
 exports.registerUser = catchAsyncError(async (req, res, next) => {
     const {name, email, password } = req.body
 
     let avatar;
-    
     let BASE_URL = process.env.BACKEND_URL;
-    if(process.env.NODE_ENV === "production"){
+    
+   
+    if(process.env.NODE_ENV === "production"){ 
         BASE_URL = `${req.protocol}://${req.get('host')}`
     } 
 
