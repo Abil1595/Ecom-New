@@ -257,6 +257,22 @@
         "stock": 6,
         "numOfReviews": 9,
         "reviews": []
+    },
+    {
+        "name": "Dev Herbal Products",
+        "price": 340.12,
+        "description": "Good herbal products and good for health.",
+        "ratings": 3,
+        "images": [
+            {
+                "image": "/images/products/39.jpg"
+            }
+        ],
+        "category": "Cream", 
+        "seller": "Ebay",
+        "stock": 6,
+        "numOfReviews": 9,
+        "reviews": []
     }
 
 ]
